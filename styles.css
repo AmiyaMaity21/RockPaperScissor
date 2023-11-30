@@ -22,13 +22,14 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: var(--green);
+    font-weight: 600px;
     font-family: roboto;
 }
 
 .container {
     max-width: 100%;
-    width: 700px;
-    height: 150px;
+    width: 800px;
+    height: 158px;
     border-radius: 15px;
     border: 2px solid var(--white);
     display: flex;
@@ -52,7 +53,8 @@ body {
     background-color: var(--white);
     border: 1px solid white;
     border-radius: 9px;
-    margin-right: 30px;
+    margin-right: 20px;
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +80,7 @@ body {
     min-height: 69vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 7rem;
 }
@@ -150,6 +152,12 @@ body {
     color: var(--white);
     font-size: 17px;
 }
+.user {
+    margin-left:2.5rem;
+}
+.machine {
+    margin-right:2.5rem;
+}
 
 .btn-div {
     width: 100%;
@@ -157,8 +165,19 @@ body {
     justify-content: flex-end;
     padding: 0 2rem 0.5rem 0;
 }
-
 .btn-rule {
+    padding: 8px 30px;
+    border: 2px solid var(--white);
+    outline: none;
+    background: transparent;
+    font-size: 21px;
+    font-weight: 600px;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    color: var(--white);
+    cursor: pointer;    
+}
+.btn-next {
     padding: 8px 30px;
     border: 2px solid var(--white);
     outline: none;
@@ -168,11 +187,12 @@ body {
     border-radius: 10px;
     color: var(--white);
     cursor: pointer;
-
+    margin-left: 2rem;
+    font-weight: 600px;
+    display: none;    
 }
-
 .rule-info {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -203,16 +223,41 @@ body {
 }
 
 .close {
-    background: transparent;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    margin: -2rem;
-    z-index: 1;
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border: 4px solid white;
+    border-radius: 100%;
+}
+
+.close span {
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 4px;
+    margin-left: 0.5px;
+}
+
+.close span:nth-child(1) {
+    left: 9px;
+    top: 16px;
+    transform: rotate(130deg);
+}
+
+.close span:nth-child(2) {
+    left: 9px;
+    top: 16px;
+    transform: rotate(50deg);
 }
 
 .win-info {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100vh;
     color: var(--white);
@@ -264,4 +309,33 @@ span {
 .right {
     left: 34rem;
     top: 3%;
+}
+
+.winning-page {
+    color: var(--white);
+    max-width: 100%;
+    width: 504px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.winning-logo {
+    position: absolute;
+    padding-top: 5rem;
+}
+.winning-page::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+.victory {
+    font-size: 91px;
+    font-weight: 600;
+    letter-spacing: 8px;
+}
+.Game-status {
+    font-size: 41px;
+    font-weight: 600;
+    letter-spacing: 3px;
 }
