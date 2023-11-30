@@ -22,6 +22,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: var(--green);
+    font-family: roboto;
 }
 
 .container {
@@ -79,6 +80,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-top: 7rem;
 }
 
 .info {
@@ -87,7 +89,7 @@ body {
     font-weight: 700;
     margin: 1rem 0 0 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -176,7 +178,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    top: 0;
+    top: 7rem;
     margin-right: 5rem;
     display: none;
 }
@@ -216,7 +218,7 @@ body {
     color: var(--white);
     display: grid;
     place-content: center;
-    top: 0;
+    top: 8rem;
     text-align: center;
     display: none;
 }
@@ -235,26 +237,31 @@ body {
 
 .winner {
     color: var(--white);
-    padding-bottom: 1rem;
+    font-size: 39px;
 }
-
+span {
+    color: var(--white);
+    font-size: 25px;
+}
 .play {
     background: transparent;
     initial-letter: 5px;
     background: var(--white);
     outline: none;
     cursor: pointer;
-    padding: 15px 20px;
+    padding: 15px 15px;
     font-size: 15px;
     border: none;
     border-radius: 9px;
+    margin-top:1rem
 }
 
-.show{
-    left:6rem;
+.show {
+    left: 1rem;
     top: 3%;
 }
+
 .right {
-left: 29rem;
-top:3%;
+    left: 34rem;
+    top: 3%;
 }

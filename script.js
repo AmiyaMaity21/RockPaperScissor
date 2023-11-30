@@ -10,11 +10,16 @@ let random=Math.floor(Math.random()*3);
 let triangle=document.querySelector(".triangle");
 let score=JSON.parse(localStorage.getItem("score"));
 let scoreElem=document.getElementById("score");
+let comscore=JSON.parse(localStorage.getItem("comscore"));
+let comScore=document.getElementById("comscore");
 let ruleBtn=document.querySelector(".btn-rule");
 let ruleInfo=document.querySelector(".rule-info");
 let ruleimg=document.querySelector(".rule-img");
 if(score){
    scoreElem.innerText=score;
+}
+if(comscore){
+   comScore.innerText=comscore;
 }
 let count=0;
 hand.forEach((element,index) => {
@@ -48,7 +53,11 @@ localStorage.setItem("score", JSON.stringify(count));
 }
 else{
 winInfo.style.display="grid";
-winner.innerText="YOU LOSS"
+winner.innerText="YOU LOSS";
+count=comscore;
+count++;
+comScore.innerText=count;
+localStorage.setItem("comscore", JSON.stringify(count));
 }
 },1500);
 })
@@ -64,7 +73,7 @@ ruleimg.style.transform="translateY(0)"
 })
 let close=document.querySelector(".close");
 close.addEventListener("click", ()=>{
-ruleimg.style.transform="translateY(-200)"
+ruleimg.style.transform="translateY(-200%)"
 setTimeout(()=>{
 ruleInfo.style.display="none";
 },400);
