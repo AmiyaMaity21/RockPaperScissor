@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p>SCISSORS</p>
+        </div>
+        <div class="score">
+            <p>COMPUTER</p>
+            <p>SCORE</p>
+            <h1> 0 </h1>
+        </div>
+        <div class="score">
+            <p>YOUR</p>
+            <p>SCORE</p>
+            <h1 id="score"></h1>
+        </div>
+    </div>
+    <div class="game-container">
+        <div class="info">
+            <h1 class="user">YOU PICKED</h1>
+            <h1 class="machine">PC PICKED</h1>
+        </div>
+        <div class="hands">
+            <img src="./Images/triangle.png" alt="" class="triangle">
+            <div class="rock hand">
+                <div class="item">
+                    <img src="/images/rock.svg" alt="">
+                </div>
+            </div>
+            <div class="scissors hand ">
+                <div class="item">
+                    <img src="/images/scissors.svg" alt="">
+                </div>
+            </div>
+            <div class="paper hand ">
+                <div class="item">
+                    <img src="/images/paper.svg" alt="">
+                </div>
+            </div>
+            <div class="computer rock">
+                <div class="item">
+                    <img src="/images/rock.svg" alt="">
+                </div>
+            </div>
+            <div class="computer scissors">
+                <div class="item">
+                    <img src="/images/scissors.svg" alt="">
+                </div>
+            </div>
+            <div class="computer paper">
+                <div class="item">
+                    <img src="/images/paper.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="btn-div">
+            <button class="btn-rule">RULES</button>
+        </div>
+        <div class="rule-info">
+            <div class="rule-img">
+                <div>
+                    <button class="close">
+                        <img src="./Images/Ellipse 6.svg" alt="">
+                    </button>
+                </div>
+                <img src="./Images/Frame 4.svg" alt="">
+            </div>
+        </div>
+        <div class="win-info">
+            <h1 class="winner">YOU WIN</h1>
+            <span>AGAINST PC</span>
+            <button class="play">PLAY AGAIN</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
