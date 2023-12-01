@@ -189,7 +189,7 @@ body {
     cursor: pointer;
     margin-left: 2rem;
     font-weight: 600px;
-    display: none;    
+    display: none;  
 }
 .rule-info {
     position: absolute;
@@ -318,6 +318,8 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -48.5rem;
+    display: none;    
 }
 .winning-logo {
     position: absolute;

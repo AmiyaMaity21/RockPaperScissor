@@ -18,6 +18,7 @@ let ruleimg = document.querySelector(".rule-img");
 let btnNext = document.querySelector(".btn-next");
 let winningPage = document.querySelector(".winning-page");
 //let winningLogo = document.querySelector(".winning-logo");
+//let gameContainer = document.querySelector(".game-container")
 if (score) {
    scoreElem.innerText = score;
 }
